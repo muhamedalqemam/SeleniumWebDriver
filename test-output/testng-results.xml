@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-13T12:08:13 EET" name="Default suite" finished-at="2024-04-13T12:08:28 EET" duration-ms="15506">
+  <suite started-at="2024-04-13T13:21:55 EET" name="Default suite" finished-at="2024-04-13T13:22:08 EET" duration-ms="13415">
     <groups>
     </groups>
-    <test started-at="2024-04-13T12:08:13 EET" name="Default test" finished-at="2024-04-13T12:08:28 EET" duration-ms="15506">
-      <class name="findingElemints.FindElemintByID">
-        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:findingElemints.FindElemintByID@5d018107]" started-at="2024-04-13T12:08:13 EET" name="OpenUrl" finished-at="2024-04-13T12:08:27 EET" duration-ms="14102" status="PASS">
+    <test started-at="2024-04-13T13:21:55 EET" name="Default test" finished-at="2024-04-13T13:22:08 EET" duration-ms="13415">
+      <class name="findingElemints.FindElementByClass">
+        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:findingElemints.FindElementByClass@3234f74e]" started-at="2024-04-13T13:21:55 EET" name="OpenUrl" finished-at="2024-04-13T13:22:07 EET" duration-ms="11873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenUrl -->
-        <test-method signature="FinfElementById()[pri:0, instance:findingElemints.FindElemintByID@5d018107]" started-at="2024-04-13T12:08:27 EET" name="FinfElementById" finished-at="2024-04-13T12:08:27 EET" duration-ms="102" status="PASS">
+        <test-method signature="FinfElementByClass()[pri:0, instance:findingElemints.FindElementByClass@3234f74e]" started-at="2024-04-13T13:22:07 EET" name="FinfElementByClass" finished-at="2024-04-13T13:22:07 EET" duration-ms="62" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- FinfElementById -->
-        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:findingElemints.FindElemintByID@5d018107]" started-at="2024-04-13T12:08:27 EET" name="CloseDriver" finished-at="2024-04-13T12:08:28 EET" duration-ms="1213" status="PASS">
+        </test-method> <!-- FinfElementByClass -->
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:findingElemints.FindElementByClass@3234f74e]" started-at="2024-04-13T13:22:07 EET" name="CloseDriver" finished-at="2024-04-13T13:22:08 EET" duration-ms="1430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
-      </class> <!-- findingElemints.FindElemintByID -->
+      </class> <!-- findingElemints.FindElementByClass -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
