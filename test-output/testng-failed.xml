@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="findingElemints.FindByXpath">
+      <class name="workingWithElements.WorkingWithTextBoxAndButtons">
         <methods>
           <include name="OpenUrl"/>
           <include name="CloseDriver"/>
-          <include name="FindElements"/>
+          <include name="FinfElementByClass"/>
         </methods>
-      </class> <!-- findingElemints.FindByXpath -->
+      </class> <!-- workingWithElements.WorkingWithTextBoxAndButtons -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
