@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="workingWithElements.WorkingWithTextBoxAndButtons">
+      <class name="workingWithElements.WorkingWithCheckBoxes">
         <methods>
-          <include name="OpenUrl"/>
           <include name="CloseDriver"/>
           <include name="FinfElementByClass"/>
+          <include name="OpenUrl"/>
         </methods>
-      </class> <!-- workingWithElements.WorkingWithTextBoxAndButtons -->
+      </class> <!-- workingWithElements.WorkingWithCheckBoxes -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,24 +1,26 @@
 package workingWithElements;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertFalse;
 import static org.testng.Assert.assertTrue;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class WorkingWithTextBoxAndButtons {
+public class WorkingWithDropDownList {
 
 	FirefoxDriver driver;
 
 	@BeforeTest
 	public void OpenUrl() {
 		driver = new FirefoxDriver();
-		driver.navigate().to("http://the-internet.herokuapp.com/login");
+		driver.navigate().to("http://the-internet.herokuapp.com/dropdown");
 
 
 
@@ -27,18 +29,17 @@ public class WorkingWithTextBoxAndButtons {
 	@Test
 	public void FinfElementByClass () {
 		try {
-			WebElement TxtUserName = driver.findElement(By.id("username"));
-			WebElement TxtPassword = driver.findElement(By.id("password"));
-			WebElement BtnLogin = driver.findElement(By.className("radius"));
-			TxtUserName.clear();
-			TxtUserName.sendKeys("tomsmith");
-			TxtPassword.clear();
-			TxtPassword.sendKeys("SuperSecretPassword!");
-			BtnLogin.click();
 			
-			WebElement SuccessNotification = driver.findElement(By.id("flash"));
-			assertTrue(SuccessNotification.getText().contains("You logged into a secure area!"));
-			assertEquals(driver.getCurrentUrl(), "http://the-internet.herokuapp.com/secure");
+			WebElement options = driver.findElement(By.id("dropdown"));
+			Select dp1 = new Select(options);
+			assertFalse(dp1.isMultiple());
+			
+			assertEquals(3, dp1.getOptions().size());
+			//dp1.selectByVisibleText("Option 1");
+			//dp1.selectByValue("1");
+			dp1.selectByIndex(2);
+			
+		assertEquals("Option 1", dp1.getOptions().get(1).getText());
 
 
 		} catch (NoSuchElementException e) {
