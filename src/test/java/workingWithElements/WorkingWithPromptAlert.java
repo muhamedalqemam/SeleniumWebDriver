@@ -15,7 +15,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class WorkingWithJavaScriptAlert {
+public class WorkingWithPromptAlert {
 
 	FirefoxDriver driver;
 
@@ -30,11 +30,13 @@ public class WorkingWithJavaScriptAlert {
 	@Test()
 
 	public void AcceptAlert()  {
-		WebElement BtnAlert = driver.findElement(By.id("simple"));
-		BtnAlert.click();
+		WebElement BtnPrompt = driver.findElement(By.id("prompt"));
+		BtnPrompt.click();
 		Alert alert = driver.switchTo().alert();
-		assertEquals("Hello! I am an alert box!", alert.getText());
+		alert.sendKeys("Mohamed");
 		alert.accept();
+		WebElement message = driver.findElement(By.id("prompt_demo"));
+		assertEquals("Hello Mohamed! How are you today?", message.getText());
 
 
 	}

@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-15T03:03:06 EET" name="Default suite" finished-at="2024-04-15T03:03:11 EET" duration-ms="5448">
+  <suite started-at="2024-04-15T03:38:40 EET" name="Default suite" finished-at="2024-04-15T03:38:46 EET" duration-ms="5261">
     <groups>
     </groups>
-    <test started-at="2024-04-15T03:03:06 EET" name="Default test" finished-at="2024-04-15T03:03:11 EET" duration-ms="5448">
-      <class name="workingWithElements.WorkingWithJavaScriptAlert">
-        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:workingWithElements.WorkingWithJavaScriptAlert@5d018107]" started-at="2024-04-15T03:03:06 EET" name="OpenUrl" finished-at="2024-04-15T03:03:10 EET" duration-ms="4248" status="PASS">
+    <test started-at="2024-04-15T03:38:40 EET" name="Default test" finished-at="2024-04-15T03:38:46 EET" duration-ms="5261">
+      <class name="workingWithElements.WorkingWithPromptAlert">
+        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:workingWithElements.WorkingWithPromptAlert@5d018107]" started-at="2024-04-15T03:38:40 EET" name="OpenUrl" finished-at="2024-04-15T03:38:44 EET" duration-ms="3954" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenUrl -->
-        <test-method signature="AcceptAlert()[pri:0, instance:workingWithElements.WorkingWithJavaScriptAlert@5d018107]" started-at="2024-04-15T03:03:10 EET" name="AcceptAlert" finished-at="2024-04-15T03:03:10 EET" duration-ms="182" status="PASS">
+        <test-method signature="AcceptAlert()[pri:0, instance:workingWithElements.WorkingWithPromptAlert@5d018107]" started-at="2024-04-15T03:38:44 EET" name="AcceptAlert" finished-at="2024-04-15T03:38:45 EET" duration-ms="210" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AcceptAlert -->
-        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:workingWithElements.WorkingWithJavaScriptAlert@5d018107]" started-at="2024-04-15T03:03:10 EET" name="CloseDriver" finished-at="2024-04-15T03:03:11 EET" duration-ms="964" status="PASS">
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:workingWithElements.WorkingWithPromptAlert@5d018107]" started-at="2024-04-15T03:38:45 EET" name="CloseDriver" finished-at="2024-04-15T03:38:46 EET" duration-ms="1056" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
-      </class> <!-- workingWithElements.WorkingWithJavaScriptAlert -->
+      </class> <!-- workingWithElements.WorkingWithPromptAlert -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
