@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="workingWithElements.WorkingWithPromptAlert">
+      <class name="workingWithElements.WorkingWithConfirmAlert">
         <methods>
+          <include name="CloseDriver"/>
           <include name="AcceptAlert"/>
           <include name="OpenUrl"/>
-          <include name="CloseDriver"/>
         </methods>
-      </class> <!-- workingWithElements.WorkingWithPromptAlert -->
+      </class> <!-- workingWithElements.WorkingWithConfirmAlert -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

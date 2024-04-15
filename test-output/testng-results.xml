@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-15T03:38:40 EET" name="Default suite" finished-at="2024-04-15T03:38:46 EET" duration-ms="5261">
+  <suite started-at="2024-04-15T03:58:02 EET" name="Default suite" finished-at="2024-04-15T03:58:07 EET" duration-ms="5059">
     <groups>
     </groups>
-    <test started-at="2024-04-15T03:38:40 EET" name="Default test" finished-at="2024-04-15T03:38:46 EET" duration-ms="5261">
-      <class name="workingWithElements.WorkingWithPromptAlert">
-        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:workingWithElements.WorkingWithPromptAlert@5d018107]" started-at="2024-04-15T03:38:40 EET" name="OpenUrl" finished-at="2024-04-15T03:38:44 EET" duration-ms="3954" status="PASS">
+    <test started-at="2024-04-15T03:58:02 EET" name="Default test" finished-at="2024-04-15T03:58:07 EET" duration-ms="5059">
+      <class name="workingWithElements.WorkingWithConfirmAlert">
+        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:workingWithElements.WorkingWithConfirmAlert@6cbcf243]" started-at="2024-04-15T03:58:02 EET" name="OpenUrl" finished-at="2024-04-15T03:58:06 EET" duration-ms="3782" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenUrl -->
-        <test-method signature="AcceptAlert()[pri:0, instance:workingWithElements.WorkingWithPromptAlert@5d018107]" started-at="2024-04-15T03:38:44 EET" name="AcceptAlert" finished-at="2024-04-15T03:38:45 EET" duration-ms="210" status="PASS">
+        <test-method signature="AcceptAlert()[pri:0, instance:workingWithElements.WorkingWithConfirmAlert@6cbcf243]" started-at="2024-04-15T03:58:06 EET" name="AcceptAlert" finished-at="2024-04-15T03:58:06 EET" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AcceptAlert -->
-        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:workingWithElements.WorkingWithPromptAlert@5d018107]" started-at="2024-04-15T03:38:45 EET" name="CloseDriver" finished-at="2024-04-15T03:38:46 EET" duration-ms="1056" status="PASS">
+        <test-method signature="DismissAlert()[pri:0, instance:workingWithElements.WorkingWithConfirmAlert@6cbcf243]" started-at="2024-04-15T03:58:06 EET" name="DismissAlert" finished-at="2024-04-15T03:58:06 EET" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DismissAlert -->
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:workingWithElements.WorkingWithConfirmAlert@6cbcf243]" started-at="2024-04-15T03:58:06 EET" name="CloseDriver" finished-at="2024-04-15T03:58:07 EET" duration-ms="926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
-      </class> <!-- workingWithElements.WorkingWithPromptAlert -->
+      </class> <!-- workingWithElements.WorkingWithConfirmAlert -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
