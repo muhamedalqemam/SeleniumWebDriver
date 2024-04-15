@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="workingWithElements.TestMultipleWindows">
+      <class name="workingWithElements.TestCookies">
         <methods>
+          <include name="TestWindowByTitle"/>
           <include name="OpenUrl"/>
-          <include name="TestWindowByName"/>
           <include name="CloseDriver"/>
         </methods>
-      </class> <!-- workingWithElements.TestMultipleWindows -->
+      </class> <!-- workingWithElements.TestCookies -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

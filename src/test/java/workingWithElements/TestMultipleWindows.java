@@ -48,13 +48,13 @@ public class TestMultipleWindows {
 		String CurrentWindowId = driver.getWindowHandle();
 		WebElement HelpBtn = driver.findElement(By.id("helpbutton"));
 		HelpBtn.click();
-		
+
 		driver.switchTo().window("HelpWindow");
 		System.out.println(driver.getTitle());
 		driver.close();
-		
+
 		driver.switchTo().window(CurrentWindowId);
-		
+
 	}
 
 	@AfterTest
