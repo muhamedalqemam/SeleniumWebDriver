@@ -1,9 +1,11 @@
 package workingWithElements;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import java.util.Iterator;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
@@ -18,14 +20,14 @@ import org.testng.collections.Sets;
 
 import com.google.common.collect.Iterables;
 
-public class TestCookies {
+public class TestImplicityWait {
 
 	FirefoxDriver driver;
 
 	@BeforeTest
 	public void OpenUrl() {
 		driver = new FirefoxDriver();
-		driver.navigate().to("http://magento-demo.lexiconn.com/");
+		driver.navigate().to("http://cookbook.seleniumacademy.com/AjaxDemo.html");
 
 	}
 
@@ -33,28 +35,14 @@ public class TestCookies {
 	@Test(priority = 1)
 
 	public void TestWindowByTitle()  {
-		WebElement LanguageSelect = driver.findElement(By.id("select-language"));
-		Select select = new Select(LanguageSelect);
-
-		assertEquals("English", select.getFirstSelectedOption().getText());
-
-		Cookie store = driver.manage().getCookieNamed("store");
-		assertEquals(null, store);
-
-		select.selectByVisibleText("German");
-		store = driver.manage().getCookieNamed("store");
-		assertEquals("german", store.getValue());
-		System.out.println(store.getValue());
-
-		Set<Cookie> cookies = driver.manage().getCookies();
-		System.out.println(cookies.size());
-		Iterator<Cookie> itr = cookies.iterator();
-
-		while (itr.hasNext()) {
-			Cookie cookie = itr.next();
-			System.out.println(cookie.getDomain());
-		}
-
+		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		WebElement BtnPage = driver.findElement(By.linkText("Page 4"));
+		BtnPage.click();
+		
+		WebElement MessagePage = driver.findElement(By.id("page4"));
+		assertTrue(MessagePage.getText().contains("Nunc nibh "));
+		
+		
 	}
 
 
