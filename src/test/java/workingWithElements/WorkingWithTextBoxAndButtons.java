@@ -20,7 +20,7 @@ public class WorkingWithTextBoxAndButtons {
 		driver = new FirefoxDriver();
 		driver.navigate().to("http://the-internet.herokuapp.com/login");
 
-
+		
 
 	}
 

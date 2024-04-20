@@ -4,7 +4,6 @@ import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
 
-import org.apache.logging.log4j.core.util.FileUtils;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
@@ -45,7 +44,7 @@ public class TestTakeScreenshot {
 		.contextClick(btn)
 		.click(Cmenu)
 		.perform();
-		
+
 		WebElement BugToTestScreenShot = driver.findElement(By.cssSelector("li.context-menu-item.context-menu-icon.context-menu-icon"));
 
 		Thread.sleep(3000);
@@ -56,15 +55,15 @@ public class TestTakeScreenshot {
 		alert.accept();
 
 	}
-	
+
 	@AfterMethod
 	public void TakeScreenshot(ITestResult result) throws IOException {
 		if (result.getStatus() == ITestResult.FAILURE) {
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			org.apache.commons.io.FileUtils.copyFile(source, new File("./screenshots/"+ result.getName()+".png"));
-			
-			
+
+
 		}
 	}
 

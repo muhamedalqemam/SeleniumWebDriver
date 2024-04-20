@@ -1,20 +1,10 @@
 package findingElemints;
 
-import static org.testng.Assert.assertEquals;
-
-import java.util.List;
-
-import javax.lang.model.element.Element;
-
-import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import dev.failsafe.internal.util.Assert;
 
 public class TestBrowserCommands {
 

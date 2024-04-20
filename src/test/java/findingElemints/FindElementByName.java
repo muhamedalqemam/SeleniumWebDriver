@@ -32,9 +32,9 @@ public class FindElementByName {
 			System.out.println("the element is not found.");
 		}
 
-		
+
 	}
-	
+
 	@AfterTest
 	public void CloseDriver() {
 		driver.close();

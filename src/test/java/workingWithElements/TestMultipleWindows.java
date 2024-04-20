@@ -1,6 +1,7 @@
 package workingWithElements;
 
 import static org.testng.Assert.assertEquals;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -19,7 +20,7 @@ public class TestMultipleWindows {
 
 	}
 
-
+	
 	@Test(priority = 1)
 
 	public void TestWindowByTitle()  {

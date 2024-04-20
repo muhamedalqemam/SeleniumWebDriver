@@ -1,94 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-20T14:43:52 EET" name="Default suite" finished-at="2024-04-20T14:44:00 EET" duration-ms="8273">
+  <suite started-at="2024-04-20T14:49:31 EET" name="Default suite" finished-at="2024-04-20T14:49:38 EET" duration-ms="6194">
     <groups>
     </groups>
-    <test started-at="2024-04-20T14:43:52 EET" name="Default test" finished-at="2024-04-20T14:44:00 EET" duration-ms="8273">
-      <class name="workingWithElements.TestTakeScreenshot">
-        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:workingWithElements.TestTakeScreenshot@33e01298]" started-at="2024-04-20T14:43:52 EET" name="OpenUrl" finished-at="2024-04-20T14:43:58 EET" duration-ms="6554" status="PASS">
+    <test started-at="2024-04-20T14:49:31 EET" name="Default test" finished-at="2024-04-20T14:49:38 EET" duration-ms="6194">
+      <class name="workingWithElements.DoubleClickWithActions">
+        <test-method is-config="true" signature="OpenUrl()[pri:0, instance:workingWithElements.DoubleClickWithActions@3234f74e]" started-at="2024-04-20T14:49:31 EET" name="OpenUrl" finished-at="2024-04-20T14:49:36 EET" duration-ms="4948" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OpenUrl -->
-        <test-method signature="TestWindowByTitle()[pri:0, instance:workingWithElements.TestTakeScreenshot@33e01298]" started-at="2024-04-20T14:43:58 EET" name="TestWindowByTitle" finished-at="2024-04-20T14:43:59 EET" duration-ms="430" status="FAIL">
-          <exception class="org.openqa.selenium.UnhandledAlertException">
-            <message>
-              <![CDATA[Dismissed user prompt dialog: clicked: edit: 
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [07ebf13d-4f49-429c-8750-6b84e339a4a6, findElement {value=li.context-menu-item.context-menu-icon.context-menu-icon, using=css selector}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:2289, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18452, moz:profile: C:\Users\muham\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:2289/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 07ebf13d-4f49-429c-8750-6b84e339a4a6]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: clicked: edit: 
-Build info: version: '4.19.1', revision: 'abe0ee07dc'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '22'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [07ebf13d-4f49-429c-8750-6b84e339a4a6, findElement {value=li.context-menu-item.context-menu-icon.context-menu-icon, using=css selector}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:2289, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18452, moz:profile: C:\Users\muham\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:2289/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 07ebf13d-4f49-429c-8750-6b84e339a4a6
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-at workingWithElements.TestTakeScreenshot.TestWindowByTitle(TestTakeScreenshot.java:49)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.UnhandledAlertException -->
+        <test-method signature="DoubleClick()[pri:0, instance:workingWithElements.DoubleClickWithActions@3234f74e]" started-at="2024-04-20T14:49:36 EET" name="DoubleClick" finished-at="2024-04-20T14:49:37 EET" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TestWindowByTitle -->
-        <test-method is-config="true" signature="TakeScreenshot(org.testng.ITestResult)[pri:0, instance:workingWithElements.TestTakeScreenshot@33e01298]" started-at="2024-04-20T14:43:59 EET" name="TakeScreenshot" finished-at="2024-04-20T14:43:59 EET" duration-ms="120" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=TestWindowByTitle status=FAILURE method=TestTakeScreenshot.TestWindowByTitle()[pri:0, instance:workingWithElements.TestTakeScreenshot@33e01298] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TakeScreenshot -->
-        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:workingWithElements.TestTakeScreenshot@33e01298]" started-at="2024-04-20T14:43:59 EET" name="CloseDriver" finished-at="2024-04-20T14:44:00 EET" duration-ms="1119" status="PASS">
+        </test-method> <!-- DoubleClick -->
+        <test-method is-config="true" signature="CloseDriver()[pri:0, instance:workingWithElements.DoubleClickWithActions@3234f74e]" started-at="2024-04-20T14:49:37 EET" name="CloseDriver" finished-at="2024-04-20T14:49:38 EET" duration-ms="1014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CloseDriver -->
-      </class> <!-- workingWithElements.TestTakeScreenshot -->
+      </class> <!-- workingWithElements.DoubleClickWithActions -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

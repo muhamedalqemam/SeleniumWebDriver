@@ -26,9 +26,9 @@ public class FindElementByID {
 		WebElement password = driver.findElement(By.id("password"));
 		System.out.println(username.getTagName());
 		System.out.println(password.getTagName());
-		
+
 	}
-	
+
 	@AfterTest
 	public void CloseDriver() {
 		driver.close();

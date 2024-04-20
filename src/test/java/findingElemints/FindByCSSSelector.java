@@ -1,9 +1,5 @@
 package findingElemints;
 
-import java.util.List;
-
-import javax.lang.model.element.Element;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
