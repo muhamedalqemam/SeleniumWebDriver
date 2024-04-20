@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\muham\AppData\Local\Temp\testng-eclipse--1462826264\testng-customsuite.xml</span>
+                    <span>C:\Users\muham\AppData\Local\Temp\testng-eclipse--690120319\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="workingWithElements.TestScrollToBottomOfPage" class="method navigator-link" hash-for-method="TestScroll">TestScroll</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="workingWithElements.TestTakeScreenshot" class="method navigator-link" hash-for-method="TestWindowByTitle">TestWindowByTitle</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -121,20 +121,32 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">workingWithElements.TestScrollToBottomOfPage</span>
+              <span class="class-name">workingWithElements.TestTakeScreenshot</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TestScroll">
-                  </a> <!-- TestScroll -->
-                  <span class="method-name">TestScroll</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at workingWithElements.TestScrollToBottomOfPage.TestScroll(TestScrollToBottomOfPage.java:33)
+                  <a name="TestWindowByTitle">
+                  </a> <!-- TestWindowByTitle -->
+                  <span class="method-name">TestWindowByTitle</span>
+                  <div class="stack-trace">org.openqa.selenium.UnhandledAlertException: Dismissed user prompt dialog: clicked: edit: 
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [07ebf13d-4f49-429c-8750-6b84e339a4a6, findElement {value=li.context-menu-item.context-menu-icon.context-menu-icon, using=css selector}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 124.0.2, moz:accessibilityChecks: false, moz:buildID: 20240401114208, moz:debuggerAddress: 127.0.0.1:2289, moz:geckodriverVersion: 0.34.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18452, moz:profile: C:\Users\muham\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:2289/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 07ebf13d-4f49-429c-8750-6b84e339a4a6
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:136)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at workingWithElements.TestTakeScreenshot.TestWindowByTitle(TestTakeScreenshot.java:49)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -170,7 +182,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\muham\AppData\Local\Temp\testng-eclipse--1462826264\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\muham\AppData\Local\Temp\testng-eclipse--690120319\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -179,7 +191,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;workingWithElements.TestScrollToBottomOfPage&quot;/&gt;
+      &lt;class name=&quot;workingWithElements.TestTakeScreenshot&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -221,14 +233,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TestScroll')
-data.setCell(0, 2, 'workingWithElements.TestScrollToBottomOfPage')
-data.setCell(0, 3, 3069);
+data.setCell(0, 1, 'TestWindowByTitle')
+data.setCell(0, 2, 'workingWithElements.TestTakeScreenshot')
+data.setCell(0, 3, 430);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 seconds</span>
+              <span class="suite-total-time">Total running time: 430 ms</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -254,7 +266,7 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">workingWithElements.TestScrollToBottomOfPage</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">workingWithElements.TestTakeScreenshot</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">OpenUrl</span>
                 <span class="method-start">0 ms</span>
@@ -262,12 +274,16 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">TestScroll</span>
-                <span class="method-start">4531 ms</span>
+                <span class="method-name">TestWindowByTitle</span>
+                <span class="method-start">6583 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">TakeScreenshot([TestResult name=TestWindowByTitle status=FAILURE method=TestTakeScreenshot.TestWindowByTitle()[pri:...)</span>
+                <span class="method-start">7018 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">CloseDriver</span>
-                <span class="method-start">7605 ms</span>
+                <span class="method-start">7141 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

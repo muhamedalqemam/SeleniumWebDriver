@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="workingWithElements.TestScrollToBottomOfPage">
+      <class name="workingWithElements.TestTakeScreenshot">
         <methods>
-          <include name="OpenUrl"/>
-          <include name="TestScroll"/>
+          <include name="TestWindowByTitle"/>
           <include name="CloseDriver"/>
+          <include name="TakeScreenshot"/>
+          <include name="OpenUrl"/>
         </methods>
-      </class> <!-- workingWithElements.TestScrollToBottomOfPage -->
+      </class> <!-- workingWithElements.TestTakeScreenshot -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

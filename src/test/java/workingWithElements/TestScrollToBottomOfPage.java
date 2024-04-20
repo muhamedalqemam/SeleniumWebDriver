@@ -16,29 +16,29 @@ public class TestScrollToBottomOfPage {
 
 	WebDriver driver;
 
-		@BeforeTest
-		public void OpenUrl() {
-			driver = new FirefoxDriver();
-			driver.navigate().to("https://www.jumia.com.eg/ar/");
-		}
-	
-	
-		@Test
-		public void TestScroll() throws InterruptedException {
+	@BeforeTest
+	public void OpenUrl() {
+		driver = new FirefoxDriver();
+		driver.navigate().to("https://www.jumia.com.eg/ar/");
+	}
+
+
+	@Test
+	public void TestScroll() throws InterruptedException {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scrollBy(0, 8000)");
-		
+
 		Thread.sleep(3000);
 		WebElement jumiaLogo = driver.findElement(By.cssSelector("svg.ic"));
 		assertTrue(jumiaLogo.isDisplayed());
-			
-		}
-
-
-
-		@AfterTest
-		public void CloseDriver() {
-			driver.quit();
-		}
 
 	}
+
+
+
+	@AfterTest
+	public void CloseDriver() {
+		driver.quit();
+	}
+
+}
